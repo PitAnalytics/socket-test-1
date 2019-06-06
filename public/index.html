@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PUBLIC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+</head>
+<body>
+<div class=container-fluid>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Card title</h6>
+                    <div class="row">
+                        <label for="" class="col-sm-1">Usuario</label>
+                            <select class="form-control col-sm-4" id="selectUser">
+                                <option value="usuario-1">usuario 1</option>
+                                <option value="usuario-2">usuario 2</option>
+                            </select>
+                        <label for="txtMessage" class="col-sm-1">Mensaje: </label>
+                        <input class="form-control col-sm-4" type="text" id="txtMessage">
+                        <button class="btn btn-primary col-sm-2" type="button" id="btnSend">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <table class="table" id="tableMessage">
+            </div>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="/chat.js"></script>
+</body>
+</html>
