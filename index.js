@@ -3,7 +3,7 @@ const path=require('path');
 const express= require('express');
 const app = express();
 //configuramos puerto
-app.set('port',process.env.PORT||4000);
+app.set('port',process.env.PORT||80);
 //directorio de fornt-end
 app.use(express.static(path.join(__dirname,'public')));
 //iniciamos servidor
